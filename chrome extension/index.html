@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link Check Extension</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: white; /* White background */
+      color: #333; /* Dark text color */
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px; /* Increased width */
+      margin: 20px auto;
+      padding: 40px; /* Increased padding for a wider popup */
+      background-color: #fff; /* White background */
+      border-radius: 10px; /* Slightly rounded corners */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    }
+    .btn-secondary {
+      background-color: #fca311; /* Orange color */
+      border-color: #fca311; /* Border color */
+      color: #fff; /* White text color */
+      font-size: 18px; /* Font size adjustment */
+      padding: 12px 24px; /* Padding adjustment */
+      border-radius: 6px; /* Rounded corners */
+      transition: background-color 0.3s ease; /* Smooth color transition on hover */
+    }
+    .btn-secondary:hover {
+      background-color: #e85d04; /* Darker orange on hover */
+      border-color: #e85d04; /* Darker border color on hover */
+    }
+    #result {
+      margin-top: 30px; /* Increased margin top */
+      font-weight: bold;
+      color: #fca311; /* Dark yellow color for result text */
+      font-size: 18px; /* Font size adjustment */
+      text-align: center;
+    }
+    .image-container {
+      margin-top: 30px; /* Increased margin top */
+      text-align: center;
+    }
+    .image-container img {
+      width: 200px; /* Adjust image width */
+      height: auto; /* Maintain aspect ratio */
+      display: none; /* Hide image by default */
+    }
+  </style>
+</head>
+<body>
+  <div class="container"> 
+    <button id="checkButton" class="btn btn-secondary btn-block">Check Active Tab</button>
+    <div id="result" class="mt-4">Result will appear here</div>
+    <div class="image-container mt-4">
+      <img id="safeImage" src="images/sad_dog.gif" alt="Happy Dog">
+      <img id="unsafeImage" src="images/happy_dog.gif" alt="Sad Dog">
+    </div>
+  </div>
+
+  <script src="activate_tab.js"></script>
+</body>
+</html>

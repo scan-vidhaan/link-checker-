@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Link Checker",
+  "description": "Check if a link is malicious or a phishing link.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
+
+  
